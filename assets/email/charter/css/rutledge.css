@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Rutledge-Medium;
+    src: url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/medium/rutledge-medium.svg) format("svg"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/medium/rutledge-medium.eot) format("eot"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/medium/rutledge-medium.ttf) format("ttf"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/medium/rutledge-medium.woff) format("woff")
+}
+
+@font-face {
+    font-family: Rutledge-Medium-Italic;
+    src: url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/medium-italic/rutledge-mediumitalic.svg) format("svg"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/medium-italic/rutledge-mediumitalic.eot) format("eot"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/medium-italic/rutledge-mediumitalic.ttf) format("ttf"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/medium-italic/rutledge-mediumitalic.woff) format("woff")
+}
+
+@font-face {
+    font-family: Rutledge-Regular;
+    src: url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/regular/rutledge-regular.svg) format("svg"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/regular/rutledge-regular.eot) format("eot"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/regular/rutledge-regular.ttf) format("ttf"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/regular/rutledge-regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: Rutledge-Regular-Italic;
+    src: url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/regular-italic/rutledge-regularitalic.svg) format("svg"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/regular-italic/rutledge-regularitalic.eot) format("eot"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/regular-italic/rutledge-regularitalic.ttf) format("ttf"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/regular-italic/rutledge-regularitalic.woff) format("woff")
+}
+
+@font-face {
+    font-family: Rutledge-Bold;
+    src: url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/bold/rutledge-bold.svg) format("svg"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/bold/rutledge-bold.eot) format("eot"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/bold/rutledge-bold.ttf) format("ttf"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/bold/rutledge-bold.woff) format("woff")
+}
+
+@font-face {
+    font-family: Rutledge-Bold-Italic;
+    src: url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/bold-italic/rutledge-bolditalic.svg) format("svg"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/bold-italic/rutledge-bolditalic.eot) format("eot"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/bold-italic/rutledge-bolditalic.ttf) format("ttf"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/bold-italic/rutledge-bolditalic.woff) format("woff")
+}
+
+@font-face {
+    font-family: Rutledge-Light;
+    src: url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/light/rutledge-light.svg) format("svg"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/light/rutledge-light.eot) format("eot"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/light/rutledge-light.ttf) format("ttf"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/light/rutledge-light.woff) format("woff")
+}
+
+@font-face {
+    font-family: Rutledge-Light-Italic;
+    src: url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/light-italic/rutledge-lightitalic.svg) format("svg"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/light-italic/rutledge-lightitalic.eot) format("eot"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/light-italic/rutledge-lightitalic.ttf) format("ttf"),url(//d1ff979u6gd5fc.cloudfront.net/api/static-assets/assets/3.52.0/22/assets/fonts/rutledge/light-italic/rutledge-lightitalic.woff) format("woff")
+}
